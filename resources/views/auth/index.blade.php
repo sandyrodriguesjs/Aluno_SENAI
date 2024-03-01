@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
     <title>Aluno Senai</title>
 </head>
-<body class="body">
-    <header> 
-        <div id = "title">
-            <h1> Minha </h1>
-            <h1> Aprendizagem </h1>
-        </div> 
-
-        <ul>
-            <a href="#"><li>Inicio</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#"><li>Já tem uma conta?</li></a>
-        </ul>
-    </header>
-
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Minha<br>Aprendizagem</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Já tem uma conta?</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
     <main>
         <aside> <h1>Inscreva-se agora!</h1>
                 <h2>Acompanhe sua trajetória no período de Aprendizagem</h2>
